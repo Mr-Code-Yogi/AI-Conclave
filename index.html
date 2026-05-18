@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>National Conclave on AI for Cultural Preservation & Ethical Innovation | Patna, Bihar — 23 May 2026</title>
+<meta name="description" content="A national-level conclave on Artificial Intelligence for Cultural Preservation and Ethical Innovation, organized by All World Gayatri Pariwar and Prantiya Yuva Prakoshth Bihar, at A.N. College, Patna on 23 May 2026."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --navy:      #0d1b3e;
+    --navy-mid:  #162347;
+    --royal:     #1a3a72;
+    --saffron:   #e87722;
+    --saffron-lt:#f09040;
+    --gold:      #c9a84c;
+    --gold-lt:   #e0c97a;
+    --cream:     #fdf8f0;
+    --white:     #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid:  #3d4263;
+    --text-light:#6b7280;
+    --border:    rgba(201,168,76,0.25);
+    --shadow:    0 4px 24px rgba(13,27,62,0.12);
+    --shadow-lg: 0 12px 48px rgba(13,27,62,0.18);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(13,27,62,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%; height: 64px;
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; font-size: 0.8rem;
+    color: var(--gold-lt); letter-spacing: 0.04em; text-transform: uppercase;
+    text-decoration: none;
+  }
+  .nav-brand img { height: 36px; width: auto; border-radius: 4px; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-size: 0.82rem; font-weight: 500; letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold-lt); }
+  .nav-cta {
+    background: var(--saffron); color: #fff; text-decoration: none;
+    padding: 8px 22px; border-radius: 4px;
+    font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--saffron-lt); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 24px; height: 2px; background: #fff; display: block; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background:
+      linear-gradient(160deg, rgba(13,27,62,0.97) 0%, rgba(22,35,71,0.95) 55%, rgba(26,58,114,0.92) 100%),
+      url('https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1600&q=80') center/cover no-repeat;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 120px 5% 80px;
+    position: relative; overflow: hidden;
+  }
+  #hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% 60%, rgba(201,168,76,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-organizers {
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+    margin-bottom: 36px; flex-wrap: wrap;
+  }
+  .hero-organizers img {
+    height: 64px; width: auto; object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+    border-radius: 6px;
+  }
+  .org-divider {
+    width: 1px; height: 48px; background: rgba(201,168,76,0.35);
+  }
+  .hero-tag {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold);
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 6px 18px; border-radius: 2px; margin-bottom: 24px;
+  }
+  .hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    font-weight: 800; color: #fff; line-height: 1.15;
+    margin-bottom: 12px; max-width: 900px;
+  }
+  .hero-title .accent { color: var(--saffron); }
+  .hero-title .gold-text { color: var(--gold-lt); }
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: rgba(255,255,255,0.75); font-style: italic;
+    margin-bottom: 40px; max-width: 680px;
+  }
+  .hero-meta {
+    display: flex; align-items: center; justify-content: center; gap: 0;
+    flex-wrap: wrap; margin-bottom: 44px;
+    border: 1px solid rgba(201,168,76,0.25); border-radius: 6px;
+    overflow: hidden; max-width: 700px; width: 100%;
+  }
+  .hero-meta-item {
+    flex: 1; min-width: 160px;
+    padding: 18px 24px;
+    border-right: 1px solid rgba(201,168,76,0.2);
+    text-align: center;
+  }
+  .hero-meta-item:last-child { border-right: none; }
+  .hero-meta-label {
+    font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 4px;
+  }
+  .hero-meta-value {
+    font-size: 0.95rem; font-weight: 600; color: #fff; line-height: 1.4;
+  }
+  .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+  .btn-primary {
+    background: var(--saffron); color: #fff; text-decoration: none;
+    padding: 14px 36px; border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; font-size: 0.9rem; letter-spacing: 0.04em;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--saffron-lt); transform: translateY(-1px); }
+  .btn-outline {
+    border: 1px solid rgba(201,168,76,0.5); color: var(--gold-lt); text-decoration: none;
+    padding: 14px 36px; border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; font-size: 0.9rem; letter-spacing: 0.04em;
+    transition: border-color 0.2s, color 0.2s;
+    display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ── SECTION SHARED ── */
+  section { padding: 88px 5%; }
+  .section-header { text-align: center; margin-bottom: 56px; }
+  .section-tag {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--saffron);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700; color: var(--navy); line-height: 1.25;
+    margin-bottom: 16px;
+  }
+  .section-divider {
+    width: 56px; height: 3px; background: var(--gold);
+    margin: 0 auto 20px;
+  }
+  .section-lead {
+    font-size: 1.05rem; color: var(--text-mid);
+    max-width: 680px; margin: 0 auto; line-height: 1.75;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+
+  /* ── ABOUT ── */
+  #about { background: var(--white); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+  }
+  .about-visual {
+    position: relative;
+  }
+  .about-visual-inner {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--royal) 100%);
+    border-radius: 8px; padding: 40px; color: #fff;
+    position: relative; overflow: hidden;
+  }
+  .about-visual-inner::after {
+    content: ''; position: absolute; top: -30px; right: -30px;
+    width: 160px; height: 160px;
+    border: 2px solid rgba(201,168,76,0.2); border-radius: 50%;
+  }
+  .about-stat {
+    margin-bottom: 28px; padding-bottom: 28px;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+  .about-stat:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+  .about-stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem; font-weight: 700; color: var(--gold-lt); line-height: 1;
+    margin-bottom: 4px;
+  }
+  .about-stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+  .about-text h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; font-weight: 700; color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .about-text p { color: var(--text-mid); margin-bottom: 16px; font-size: 0.97rem; }
+  .theme-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .theme-pill {
+    background: rgba(13,27,62,0.06); color: var(--navy);
+    padding: 7px 16px; border-radius: 20px;
+    font-size: 0.8rem; font-weight: 500; border: 1px solid rgba(13,27,62,0.1);
+  }
+
+  /* ── POSTER ── */
+  #poster { background: var(--cream); }
+  .poster-showcase {
+    display: flex; justify-content: center; align-items: center;
+  }
+  .poster-wrapper {
+    position: relative; max-width: 480px; width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .poster-wrapper:hover { transform: scale(1.02); }
+  .poster-wrapper img {
+    width: 100%; border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(13,27,62,0.25);
+    display: block;
+  }
+  .poster-zoom-hint {
+    position: absolute; bottom: 16px; right: 16px;
+    background: rgba(13,27,62,0.85); color: #fff;
+    padding: 8px 14px; border-radius: 4px;
+    font-size: 0.75rem; font-weight: 500;
+    backdrop-filter: blur(8px);
+  }
+
+  /* Lightbox */
+  .lightbox {
+    display: none; position: fixed; inset: 0; z-index: 999;
+    background: rgba(0,0,0,0.9); align-items: center; justify-content: center;
+    padding: 20px;
+  }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-height: 92vh; max-width: 90vw; border-radius: 8px; object-fit: contain; }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 24px;
+    color: #fff; font-size: 2rem; cursor: pointer; line-height: 1;
+    background: none; border: none;
+  }
+
+  /* ── CHIEF GUEST SPOTLIGHT ── */
+  #chinmay {
+    background: linear-gradient(160deg, var(--navy) 0%, #1e2f5e 100%);
+    color: #fff;
+    position: relative; overflow: hidden;
+  }
+  #chinmay::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.08) 0%, transparent 60%);
+  }
+  #chinmay .section-title { color: #fff; }
+  #chinmay .section-lead { color: rgba(255,255,255,0.7); }
+  .chinmay-grid {
+    display: grid; grid-template-columns: 360px 1fr; gap: 64px; align-items: start;
+    position: relative;
+  }
+  .chinmay-portrait {
+    position: sticky; top: 100px;
+  }
+  .chinmay-portrait img {
+    width: 100%; border-radius: 8px;
+    box-shadow: 0 20px 48px rgba(0,0,0,0.4);
+    display: block;
+  }
+  .chinmay-portrait-fallback {
+    width: 100%; aspect-ratio: 3/4; border-radius: 8px;
+    background: linear-gradient(160deg, rgba(201,168,76,0.15) 0%, rgba(26,58,114,0.3) 100%);
+    border: 2px solid rgba(201,168,76,0.3);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 12px;
+  }
+  .chinmay-portrait-fallback .initials {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem; font-weight: 700;
+    color: var(--gold-lt); line-height: 1;
+  }
+  .portrait-caption {
+    margin-top: 16px; text-align: center;
+  }
+  .portrait-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; font-weight: 700; color: var(--gold-lt);
+  }
+  .portrait-role {
+    font-size: 0.82rem; color: rgba(255,255,255,0.6);
+    margin-top: 4px; line-height: 1.5;
+  }
+  .chinmay-content {}
+  .chinmay-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; font-style: italic;
+    color: rgba(255,255,255,0.85); line-height: 1.75; margin-bottom: 32px;
+    padding-left: 20px; border-left: 3px solid var(--gold);
+  }
+  .chinmay-bio p {
+    color: rgba(255,255,255,0.75); font-size: 0.95rem; line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  .chinmay-highlight-quote {
+    margin: 36px 0;
+    padding: 28px 32px;
+    background: rgba(201,168,76,0.1);
+    border-left: 4px solid var(--gold);
+    border-radius: 0 6px 6px 0;
+  }
+  .chinmay-highlight-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-style: italic; color: var(--gold-lt); line-height: 1.7;
+  }
+  .chinmay-highlight-quote cite {
+    display: block; margin-top: 12px;
+    font-size: 0.8rem; color: rgba(255,255,255,0.5);
+    font-style: normal; letter-spacing: 0.05em;
+  }
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: #0d1b3e;
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  display: none;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(13,27,62,0.7);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s;
+}
+
+.carousel-btn:hover {
+  background: var(--gold);
+  color: #0d1b3e;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: var(--gold-lt);
+  transform: scale(1.3);
+}
+  /* Credentials grid */
+  .creds-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 32px 0;
+  }
+  .cred-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 6px; padding: 20px;
+  }
+  .cred-icon { font-size: 1.4rem; margin-bottom: 8px; }
+  .cred-label {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 6px;
+  }
+  .cred-value { font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.5; }
+
+  /* Milestones */
+  .milestones-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; font-weight: 700; color: var(--gold-lt);
+    letter-spacing: 0.05em; text-transform: uppercase;
+    margin: 40px 0 24px;
+  }
+  .timeline { position: relative; }
+  .timeline::before {
+    content: ''; position: absolute; left: 16px; top: 8px; bottom: 8px;
+    width: 2px; background: linear-gradient(to bottom, var(--gold), transparent);
+  }
+  .timeline-item {
+    display: flex; gap: 24px; margin-bottom: 28px;
+    position: relative; padding-left: 8px;
+  }
+  .timeline-dot {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--navy); border: 2px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem; color: var(--gold); font-weight: 700;
+    flex-shrink: 0; position: relative; z-index: 1;
+  }
+  .timeline-body { padding-top: 4px; }
+  .timeline-year {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+    color: var(--gold); text-transform: uppercase; margin-bottom: 4px;
+  }
+  .timeline-event {
+    font-weight: 600; color: #fff; font-size: 0.92rem; margin-bottom: 4px;
+  }
+  .timeline-desc { font-size: 0.82rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+
+  /* Global roles */
+  .global-roles {
+    display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;
+  }
+  .role-tag {
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(201,168,76,0.2);
+    color: rgba(255,255,255,0.75); padding: 6px 14px; border-radius: 3px;
+    font-size: 0.78rem; line-height: 1.4;
+  }
+
+  /* ── SPEAKERS ── */
+  #speakers { background: var(--white); }
+  .speakers-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+  }
+  .speaker-card {
+    background: var(--cream); border-radius: 8px;
+    border: 1px solid rgba(13,27,62,0.08);
+    overflow: hidden; transition: box-shadow 0.25s, transform 0.25s;
+  }
+  .speaker-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+  .speaker-card-header {
+    background: linear-gradient(135deg, var(--navy), var(--royal));
+    padding: 28px 24px 20px; text-align: center; position: relative;
+  }
+  .speaker-avatar {
+    width: 100px; height: 100px; border-radius: 50%;
+    border: 3px solid rgba(201,168,76,0.5);
+    margin: 0 auto 14px; display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem; font-weight: 700; color: var(--gold-lt);
+    background: rgba(255,255,255,0.05); overflow: hidden;
+  }
+  .speaker-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  .speaker-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; font-weight: 700; color: #fff; line-height: 1.3;
+  }
+  .speaker-role { font-size: 0.78rem; color: var(--gold-lt); margin-top: 4px; line-height: 1.4; }
+  .speaker-card-body { padding: 20px 24px; }
+  .speaker-bio { font-size: 0.85rem; color: var(--text-mid); line-height: 1.65; }
+  .speaker-tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .speaker-tag {
+    background: rgba(13,27,62,0.07); color: var(--navy);
+    padding: 4px 10px; border-radius: 12px;
+    font-size: 0.72rem; font-weight: 500;
+  }
+
+  /* ── THEMES ── */
+  #themes { background: var(--cream); }
+  .themes-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  .theme-card {
+    background: var(--white); border-radius: 8px; padding: 32px 24px;
+    border: 1px solid rgba(13,27,62,0.07);
+    text-align: center; transition: box-shadow 0.25s, transform 0.25s;
+  }
+  .theme-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
+  .theme-icon {
+    width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 20px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem;
+  }
+  .theme-icon.navy { background: rgba(13,27,62,0.08); }
+  .theme-icon.saffron { background: rgba(232,119,34,0.1); }
+  .theme-icon.gold { background: rgba(201,168,76,0.12); }
+  .theme-icon.royal { background: rgba(26,58,114,0.1); }
+  .theme-name {
+    font-family: 'Poppins', sans-serif; font-weight: 700;
+    font-size: 0.92rem; color: var(--navy); margin-bottom: 10px;
+  }
+  .theme-desc { font-size: 0.83rem; color: var(--text-light); line-height: 1.65; }
+
+  /* ── SCHEDULE ── */
+  #schedule { background: var(--white); }
+  .schedule-card {
+    max-width: 760px; margin: 0 auto;
+    border: 1px solid rgba(13,27,62,0.1); border-radius: 8px; overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .schedule-header {
+    background: linear-gradient(135deg, var(--navy), var(--royal));
+    padding: 24px 32px; display: flex; justify-content: space-between; align-items: center;
+  }
+  .schedule-header h3 {
+    font-family: 'Poppins', sans-serif; font-weight: 700;
+    font-size: 1.1rem; color: #fff;
+  }
+  .schedule-date-badge {
+    background: var(--saffron); color: #fff;
+    padding: 6px 16px; border-radius: 4px;
+    font-family: 'Poppins', sans-serif; font-size: 0.8rem; font-weight: 700;
+  }
+  .schedule-list { list-style: none; }
+  .schedule-item {
+    display: flex; gap: 24px; padding: 20px 32px;
+    border-bottom: 1px solid rgba(13,27,62,0.06);
+    align-items: center;
+  }
+  .schedule-item:last-child { border-bottom: none; }
+  .schedule-time {
+    min-width: 80px; font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem; font-weight: 700; color: var(--saffron);
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .schedule-event { font-size: 0.92rem; font-weight: 500; color: var(--text-dark); }
+  .schedule-note { font-size: 0.78rem; color: var(--text-light); margin-top: 2px; }
+
+  /* ── ORGANIZERS ── */
+  #organizers { background: linear-gradient(135deg, var(--navy) 0%, #162347 100%); color: #fff; }
+  #organizers .section-title { color: #fff; }
+  #organizers .section-divider { background: var(--gold); }
+  #organizers .section-lead { color: rgba(255,255,255,0.7); }
+  .org-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .org-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 8px; padding: 40px 36px; text-align: center;
+  }
+  .org-logo-area {
+    height: 100px; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px;
+  }
+  .org-logo-area img { max-height: 90px; max-width: 160px; object-fit: contain; border-radius: 6px; }
+  .org-logo-placeholder {
+    width: 90px; height: 90px; border-radius: 50%;
+    background: rgba(201,168,76,0.12); border: 2px solid rgba(201,168,76,0.3);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem;
+  }
+  .org-name {
+    font-family: 'Poppins', sans-serif; font-size: 1.1rem; font-weight: 700;
+    color: var(--gold-lt); margin-bottom: 10px;
+  }
+  .org-desc { font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.7; }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--cream); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .contact-info h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700;
+    color: var(--navy); margin-bottom: 20px;
+  }
+  .contact-detail {
+    display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px;
+  }
+  .contact-icon {
+    width: 40px; height: 40px; border-radius: 6px;
+    background: rgba(13,27,62,0.08); display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; flex-shrink: 0;
+  }
+  .contact-text-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--saffron); }
+  .contact-text-value { text-align: justify; text-justify: inter-word;
+    hyphens: auto; font-size: 0.95rem; color: var(--text-dark); font-weight: 500; margin-top: 2px; }
+  .register-box {
+    background: linear-gradient(135deg, var(--navy), var(--royal));
+    border-radius: 8px; padding: 40px; color: #fff; text-align: center;
+  }
+  .register-box h3 {
+    font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 700;
+    color: #fff; margin-bottom: 12px;
+  }
+  .register-box p { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 28px; }
+  .register-phone {
+    font-family: 'Poppins', sans-serif; font-size: 1.4rem; font-weight: 700;
+    color: var(--gold-lt); display: block; margin-bottom: 8px; text-decoration: none;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #0a1428; padding: 28px 5%;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    border-top: 1px solid rgba(201,168,76,0.15);
+  }
+  footer p { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+  footer .footer-brand {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.8rem;
+    color: var(--gold); letter-spacing: 0.05em;
+  }
+/* ── GLOBAL JUSTIFIED TEXT FOR BETTER READABILITY ── */
+.about-text p,
+.chinmay-bio p,
+.speaker-bio,
+.org-desc,
+.theme-desc,
+.timeline-desc,
+.section-lead,
+.contact-text-value,
+p:not(.hero-subtitle):not(.register-box p) {
+    text-align: justify !important;
+    text-justify: inter-word;
+    hyphens: auto;
+    line-height: 1.78;
+}
+
+/* Extra spacing for long paragraphs */
+.chinmay-bio p,
+.about-text p,
+.org-desc {
+    margin-bottom: 1.25rem;
+}
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up { animation: fadeUp 0.65s ease both; }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.22s; }
+  .delay-3 { animation-delay: 0.34s; }
+  .delay-4 { animation-delay: 0.46s; }
+  .delay-5 { animation-delay: 0.58s; }
+/* Global Roles - Better Mobile Experience */
+.global-roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.role-tag {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(201,168,76,0.3);
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    transition: all 0.2s;
+}
+
+.role-tag:hover {
+    background: rgba(201,168,76,0.15);
+    border-color: var(--gold);
+}
+
+/* Mobile Optimization */
+@media (max-width: 900px) {
+    .global-roles {
+        justify-content: center;
+    }
+    
+    .role-tag {
+        font-size: 0.75rem;
+        padding: 7px 12px;
+        flex: 1 1 auto;
+        text-align: center;
+        min-width: 140px;           /* Makes tags more even on mobile */
+    }
+}
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .chinmay-grid { grid-template-columns: 1fr; }
+    .chinmay-portrait { position: static; }
+    .creds-grid { grid-template-columns: 1fr; }
+    .org-cards { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+  }
+  @media (max-width: 600px) {
+    nav { padding: 0 4%; }
+    section { padding: 64px 4%; }
+    .hero-meta-item { min-width: 140px; }
+    .speakers-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Professional Map Link */
+.map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--saffron);
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 8px 18px;
+    border: 1px solid rgba(232, 119, 34, 0.4);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.map-link:hover {
+    background: rgba(232, 119, 34, 0.08);
+    border-color: var(--saffron);
+    color: var(--saffron-lt);
+    transform: translateY(-1px);
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<nav>
+  <!-- Left Side: Patron Image + Brand -->
+  <div style="display: flex; align-items: center; gap: 12px;">
+    <img src="image.png" 
+         alt="Patron / Founder" 
+         style="height: 65px; width: auto; border-radius: 6px; object-fit: contain;"
+         onerror="this.style.display='none';">
+    
+    <a href="#hero" class="nav-brand" style="margin-left: 8px;">
+      <span>AI for Cultural Preservation</span>
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#chinmay">Chief Guest</a></li>
+    <li><a href="#speakers">Speakers</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-cta">Call for Queries</a>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+
+<section id="hero">
+  <div class="hero-organizers fade-up">
+    <!-- AWGP Logo -->
+    <img src="awgp.png"
+         alt="All World Gayatri Pariwar"
+         style="height: 64px; width: auto; object-fit: contain;"
+         onerror="this.style.display='none';"/>
+
+    <div class="org-divider"></div>
+
+    <!-- Prantiya Yuva Prakoshth Bihar Logo -->
+    <img src="pyp-logo.png"
+         alt="Prantiya Yuva Prakoshth Bihar"
+         style="height: 64px; width: auto; object-fit: contain;"
+         onerror="this.style.display='none'; this.parentElement.innerHTML = `
+           <div style='text-align:center;'>
+             <div style='font-family:Poppins,sans-serif;font-size:0.75rem;font-weight:700;color:var(--gold-lt);letter-spacing:0.1em;text-transform:uppercase;line-height:1.4;'>
+               Prantiya Yuva<br>Prakoshth Bihar
+             </div>
+           </div>
+         `;"/>
+  </div>
+
+  <span class="hero-tag fade-up delay-1">National Conclave · 23 May 2026 · Patna, Bihar</span>
+
+  <h1 class="hero-title fade-up delay-2">
+    <span class="accent">AI</span> for<br>
+    <span class="gold-text">Cultural</span> Preservation<br>
+    &amp; Ethical Innovation
+  </h1>
+
+  <p class="hero-subtitle fade-up delay-3">
+    Where ancient wisdom meets emerging intelligence — a national dialogue on the responsible future of Artificial Intelligence.
+  </p>
+
+  <div class="hero-meta fade-up delay-4">
+    <div class="hero-meta-item">
+      <div class="hero-meta-label">Date</div>
+      <div class="hero-meta-value">23 May 2026</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="hero-meta-label">Time</div>
+      <div class="hero-meta-value">06:00 PM onwards</div>
+    </div>
+    <div class="hero-meta-item">
+  <div class="hero-meta-label">Venue</div>
+  <div class="hero-meta-value">
+    S.N. Sinha Sabhagar<br>
+    A.N. College, Patna
+  </div>
+  <a href="https://www.google.com/maps/search/A.N.+College,+Boring+Road,+Patna,+Bihar" 
+     target="_blank" 
+     style="display:inline-block; margin-top:8px; font-size:0.8rem; color:var(--gold); text-decoration:none;">
+    📍 View on Google Maps →
+  </a>
+</div>
+  </div>
+
+  <div class="hero-buttons fade-up delay-5">
+    <a href="#contact" class="btn-primary">Register to Attend</a>
+    <a href="#about" class="btn-outline">Know More</a>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">About the Conclave</div>
+      <h2 class="section-title">Where Technology Serves Humanity</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        A national platform bringing together thinkers, scholars, policymakers, and youth to explore how Artificial Intelligence can be guided by India's civilizational values for the benefit of all humanity.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-visual-inner">
+          <div class="about-stat">
+            <div class="about-stat-number">5</div>
+            <div class="about-stat-label">Distinguished National & International Speakers</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-number">1</div>
+            <div class="about-stat-label">Historic Evening of Dialogue — 23 May 2026</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-number">2</div>
+            <div class="about-stat-label">Organizing Bodies of National Importance</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-number">∞</div>
+            <div class="about-stat-label">Youth Inspired to Lead Ethical Innovation</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h3>Reimagining AI Through the Lens of Culture & Conscience</h3>
+        <p>
+          India is at a pivotal moment. As Artificial Intelligence reshapes economies, governance, communication, and creativity, the question is not only <em>how</em> we deploy AI — but <em>why</em>, and <em>for whom</em>. This conclave asserts that technology alone is insufficient; it must be guided by ethical grounding, cultural sensitivity, and spiritual wisdom.
+        </p>
+        <p>
+          Organized by All World Gayatri Pariwar and Prantiya Yuva Prakoshth Bihar, this national conclave convenes extraordinary minds to address: How can India's ancient knowledge systems inform ethical AI? How do we preserve cultural identity in a digital age? What role can youth play in shaping responsible innovation?
+        </p>
+        <p>
+          The conclave at A.N. College, Patna is not merely a lecture — it is a declaration that conscience must lead computation.
+        </p>
+        <div class="theme-pills">
+          <span class="theme-pill">Ethical AI</span>
+          <span class="theme-pill">Cultural Preservation</span>
+          <span class="theme-pill">AI Governance</span>
+          <span class="theme-pill">Indian Knowledge Systems</span>
+          <span class="theme-pill">Youth & Innovation</span>
+          <span class="theme-pill">Conscious Technology</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     POSTER SHOWCASE
+════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════
+     POSTER SHOWCASE
+════════════════════════════════════════ -->
+<section id="poster">
+  <div class="container">
+    <div class="section-header">
+      
+      <h2 class="section-title">The Conclave — At a Glance</h2>
+      <div class="section-divider"></div>
+    </div>
+    
+    <div class="poster-showcase">
+      <div class="poster-wrapper" onclick="openLightbox()">
+        <img src="event-poster.jpeg" 
+             id="posterImg"
+             alt="National Conclave on AI for Cultural Preservation – Official Poster"
+             style="width:100%; border-radius:10px; box-shadow:0 20px 60px rgba(13,27,62,0.25); display:block;"/>
+        
+        <div class="poster-zoom-hint">🔍 Click to expand</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img src="event-poster.jpeg" 
+       id="lightboxPosterImg"
+       alt="Event Poster" 
+       style="max-height:92vh; max-width:90vw; border-radius:8px; box-shadow:0 20px 60px rgba(0,0,0,0.6);"/>
+</div>
+
+<!-- ════════════════════════════════════════
+     DR. CHINMAY PANDYA — CHIEF GUEST SPOTLIGHT
+════════════════════════════════════════ -->
+<section id="chinmay">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" style="color:var(--gold);">Chief Guest — Spotlight</div>
+      <h2 class="section-title">Dr. Chinmay Pandya Ji</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        Pro Vice Chancellor, Dev Sanskriti Vishwavidyalaya · MRCPsych, London · AYUSH Representative · Global Voice for Ethical AI
+      </p>
+    </div>
+
+    <div class="chinmay-grid">
+      <!-- Portrait Carousel -->
+      <div class="chinmay-portrait">
+        <div class="carousel-container">
+          <div class="carousel-slides" id="chinmayCarousel">
+            <img src="chinmay/chinmay-pandya-2.png" class="carousel-slide" alt="Dr. Chinmay Pandya 2">
+            <img src="chinmay/chinmay-pandya-3.png" class="carousel-slide" alt="Dr. Chinmay Pandya 3">
+            <img src="chinmay/chinmay-pandya-4.png" class="carousel-slide" alt="Dr. Chinmay Pandya 4">
+            <img src="chinmay/chinmay-pandya-1.png" class="carousel-slide active" alt="Dr. Chinmay Pandya 1">
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="carousel-btn prev" onclick="moveSlide(-1)">‹</button>
+          <button class="carousel-btn next" onclick="moveSlide(1)">›</button>
+
+          <!-- Dots -->
+          <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+
+        <div class="portrait-caption">
+          <div class="portrait-name">Dr. Chinmay Pandya</div>
+          <div class="portrait-role">
+            Pro Vice Chancellor, Dev Sanskriti Vishwavidyalaya<br>
+            MRCPsych (London) · Spiritual Scientist<br>
+            AYUSH Invited Representative of India
+          </div>
+        </div>
+
+        <!-- Key roles -->
+        <!-- Key roles -->
+<div style="margin-top:28px;">
+  <div class="cred-label" style="margin-bottom:12px;">Key Institutional Roles</div>
+  <div class="global-roles">
+    <span class="role-tag">Pro VC, DSVV</span>
+    <span class="role-tag">VP, Indian Yoga Association</span>
+    <span class="role-tag">Chairman, SAIPR</span>
+    <span class="role-tag">Founder Patron, Rishihood University</span>
+    <span class="role-tag">Chair, Baltic Culture Studies</span>
+    <span class="role-tag">Director, Global Covenant of Religions</span>
+    <span class="role-tag">Member, ICCR Governing Body</span>
+    <span class="role-tag">Templeton Prize Judge</span>
+  </div>
+</div>
+      </div>
+
+      <!-- Content -->
+      <div class="chinmay-content">
+        <p class="chinmay-intro">
+          "The question is not only how AI influences democracy, but how democracy influences AI. Technology must align with human values — and the greatest human value is trust."
+        </p>
+
+        <div class="chinmay-bio">
+          <p>
+            Dr. Chinmay Pandya is one of India's most distinguished voices at the intersection of medicine, spirituality, governance, and Artificial Intelligence. As the Pro Vice Chancellor of Dev Sanskriti Vishwavidyalaya (DSVV) — India's premier university of values and Indian Knowledge Systems — he carries the vision of Yugrishi Pt. Shriram Sharma Acharya into contemporary global dialogue.
+          </p>
+          <p>
+            Trained as a psychiatrist in the United Kingdom with MRCPsych credentials from London, Dr. Pandya served in the NHS's West London Mental Health Trust specializing in dementia and older persons' care before returning to India to serve the transformative mission of All World Gayatri Pariwar. His rare combination of Western clinical training and deep Indian philosophical grounding makes him a uniquely credible voice.
+          </p>
+          <p>
+            In recent years, Dr. Pandya has emerged as a leading global thinker on <strong style="color:var(--gold-lt);">ethical AI, AI governance, and the spiritual dimensions of technology</strong>. From the India AI Impact Summit at Bharat Mandapam to the Hiroshima Peace Memorial, from 10 Downing Street to the United Nations, he carries India's civilizational wisdom to the world's most consequential policy conversations.
+          </p>
+        </div>
+
+        <!-- Key Quote -->
+        <div class="chinmay-highlight-quote">
+          <p>"Uncontrolled AI is like Bhasmasura from Indian mythology — power without wisdom becomes destruction. India's spiritual traditions offer the ethical compass that AI civilization urgently needs."</p>
+          <cite>— Dr. Chinmay Pandya at the International Conference on Faith &amp; Future, DSVV, 2025</cite>
+        </div>
+
+        <!-- Credentials Grid -->
+        <div class="creds-grid">
+          <div class="cred-card">
+            <div class="cred-icon">🏛️</div>
+            <div class="cred-label">Education</div>
+            <div class="cred-value">MBBS · MRCPsych London · NHS West London Mental Health Trust</div>
+          </div>
+          <div class="cred-card">
+            <div class="cred-icon">🌍</div>
+            <div class="cred-label">Global Lectures</div>
+            <div class="cred-value">UN Vienna · Cambridge · Chicago · Latvia · IIT · IIM · DRDO · BARC · TIFR</div>
+          </div>
+          <div class="cred-card">
+            <div class="cred-icon">🏆</div>
+            <div class="cred-label">Awards</div>
+            <div class="cred-value">Bharat Gaurav Award (House of Commons) · Templeton Prize Judge · Honorary Senator, University of Latvia</div>
+          </div>
+          <div class="cred-card">
+            <div class="cred-icon">🇮🇳</div>
+            <div class="cred-label">National Service</div>
+            <div class="cred-value">ICCR Governing Body · Ministry of AYUSH Advisory Council · National Cultural Fund, Govt. of India</div>
+          </div>
+        </div>
+
+        <!-- Major Milestones -->
+        <div class="milestones-title">Major Milestones in AI & Global Leadership</div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">🕊️</div>
+            <div class="timeline-body">
+              <div class="timeline-year">Hiroshima, Japan</div>
+              <div class="timeline-event">Sole Indian Signatory — Historic Hiroshima Appeal</div>
+              <div class="timeline-desc">Representing India and Sanatan Dharma at the International Conference on "AI Ethics for Peace: World Religious Committee to the Rome Call." Signed the Hiroshima Appeal alongside Japan's Communications Minister and heads of 12 world religions, committing to prevent AI from working against humanity.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🏛️</div>
+            <div class="timeline-body">
+              <div class="timeline-year">February 2026 · Bharat Mandapam, New Delhi</div>
+              <div class="timeline-event">India AI Impact Summit 2026 — AI for Democracy</div>
+              <div class="timeline-desc">Chaired and led the landmark session "AI for Democracy: Reimagining Governance in the Age of Intelligence." Called for regulatory bodies, democratic safeguards, and trust-based AI systems alongside parliamentary leaders including Om Birla and international delegates.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🕌</div>
+            <div class="timeline-body">
+              <div class="timeline-year">DSVV, Haridwar</div>
+              <div class="timeline-event">International Conference — Faith &amp; Future: AI &amp; Spirituality</div>
+              <div class="timeline-desc">Convened a historic pre-summit conference bringing together scientists, policymakers, spiritual leaders, and AI experts from 20+ countries. Articulated the case for spirituality as the ethical bedrock of AI governance.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🌐</div>
+            <div class="timeline-body">
+              <div class="timeline-year">Abu Dhabi</div>
+              <div class="timeline-event">AI Faith and Civil Society Commission</div>
+              <div class="timeline-desc">Participated in the global commission focusing on interfaith responsibility, societal impacts of emerging technologies, and spirituality's role in digital futures.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🤝</div>
+            <div class="timeline-body">
+              <div class="timeline-year">Globethics / UNESCO Collaboration</div>
+              <div class="timeline-event">Trust as a Global Imperative — AI Safety</div>
+              <div class="timeline-desc">Participated with UNESCO, NYU, and Globethics representatives in framing global AI trust frameworks, human-centered AI governance, and inclusive AI ecosystems for the Global South.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🇬🇧</div>
+            <div class="timeline-body">
+              <div class="timeline-year">May 2026 · London, UK</div>
+              <div class="timeline-event">10 Downing Street &amp; British Parliament</div>
+              <div class="timeline-desc">Visited 10 Downing Street and met senior advisors to the British Prime Minister, presenting the vision of Vichar Kranti Abhiyan. Met Major Lord Alderdice in Parliament on global youth power, moral development, and cultural diplomacy.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">📚</div>
+            <div class="timeline-body">
+              <div class="timeline-year">Ongoing</div>
+              <div class="timeline-event">200+ National &amp; International Conferences Convened</div>
+              <div class="timeline-desc">As chairman of Asia's first Centre for Baltic Culture and Studies, VP of Indian Yoga Association, and editor of Dev Sanskriti International Journal — he has shaped India's intellectual voice on culture, AI, and human values globally.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision Statement -->
+        <div style="margin-top:36px;background:rgba(201,168,76,0.08);border-radius:8px;padding:28px 32px;border:1px solid rgba(201,168,76,0.2);">
+          <div class="cred-label" style="margin-bottom:12px;">His Vision for AI &amp; Society</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div style="font-size:0.83rem;color:rgba(255,255,255,0.75);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);">
+              <span style="color:var(--gold);">AI Ethics →</span> Human-centered &amp; value-based
+            </div>
+            <div style="font-size:0.83rem;color:rgba(255,255,255,0.75);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);">
+              <span style="color:var(--gold);">AI Governance →</span> Transparent &amp; democratic
+            </div>
+            <div style="font-size:0.83rem;color:rgba(255,255,255,0.75);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);">
+              <span style="color:var(--gold);">Technology →</span> Tool for human welfare
+            </div>
+            <div style="font-size:0.83rem;color:rgba(255,255,255,0.75);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);">
+              <span style="color:var(--gold);">Democracy →</span> Citizen empowerment
+            </div>
+            <div style="font-size:0.83rem;color:rgba(255,255,255,0.75);padding:8px 0;">
+              <span style="color:var(--gold);">Spirituality →</span> Moral guidance for AI
+            </div>
+            <div style="font-size:0.83rem;color:rgba(255,255,255,0.75);padding:8px 0;">
+              <span style="color:var(--gold);">Indian Culture →</span> Civilizational wisdom
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     DISTINGUISHED SPEAKERS
+════════════════════════════════════════ -->
+<section id="speakers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Distinguished Guests</div>
+      <h2 class="section-title">Voices of Vision &amp; Leadership</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        Leaders from parliament, academia, law enforcement, and global thought convening to address the most consequential question of our era.
+      </p>
+    </div>
+
+    <div class="speakers-grid">
+
+      <!-- Speaker 1 -->
+      <div class="speaker-card">
+        <div class="speaker-card-header">
+          <div class="speaker-avatar">
+            <img src="speakers/sundeep-waslekar.png" 
+                 alt="Shri Sundeep Waslekar"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-size:2.2rem;font-weight:700;color:var(--gold-lt)\'>SW</span>';">
+          </div>
+          <div class="speaker-name">Shri Sundeep Waslekar Ji</div>
+          <div class="speaker-role">Thought Leader on Global Future<br>AI Adviser &amp; Researcher</div>
+        </div>
+        <div class="speaker-card-body">
+          <p class="speaker-bio">
+            One of Asia's foremost strategic thinkers and futurists, Shri Waslekar works at the frontier of global futures research. He advises governments and institutions on Artificial Intelligence, geopolitics, and technological transformation.
+          </p>
+          <div class="speaker-tag-list">
+            <span class="speaker-tag">AI Research</span>
+            <span class="speaker-tag">Global Futures</span>
+            <span class="speaker-tag">Strategic Affairs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker 2 -->
+      <div class="speaker-card">
+        <div class="speaker-card-header">
+          <div class="speaker-avatar">
+            <img src="speakers/vikas-vaibhav.png" 
+                 alt="Shri Vikas Vaibhav"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-size:2.2rem;font-weight:700;color:var(--gold-lt)\'>VV</span>';">
+          </div>
+          <div class="speaker-name">Shri Vikas Vaibhav</div>
+          <div class="speaker-role">Inspector General of Police<br>Magadh Range, Gaya, Bihar</div>
+        </div>
+        <div class="speaker-card-body">
+          <p class="speaker-bio">
+            A distinguished Indian Police Service officer and IG of the historic Magadh Range, Shri Vikas Vaibhav brings the perspective of law enforcement, digital safety, and governance to the AI discourse.
+          </p>
+          <div class="speaker-tag-list">
+            <span class="speaker-tag">Governance</span>
+            <span class="speaker-tag">AI &amp; Security</span>
+            <span class="speaker-tag">Public Policy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker 3 -->
+      <div class="speaker-card">
+        <div class="speaker-card-header">
+          <div class="speaker-avatar">
+            <img src="speakers/ravi-shankar-prasad.png" 
+                 alt="Shri Ravi Shankar Prasad"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-size:2.2rem;font-weight:700;color:var(--gold-lt)\'>RP</span>';">
+          </div>
+          <div class="speaker-name">Shri Ravi Shankar Prasad</div>
+          <div class="speaker-role">Member of Parliament<br>Former Union Cabinet Minister</div>
+        </div>
+        <div class="speaker-card-body">
+          <p class="speaker-bio">
+            A veteran statesman, legal luminary, and senior parliamentarian, Shri Ravi Shankar Prasad has shaped India's digital landscape as former IT &amp; Electronics Minister.
+          </p>
+          <div class="speaker-tag-list">
+            <span class="speaker-tag">Parliament</span>
+            <span class="speaker-tag">Digital India</span>
+            <span class="speaker-tag">Law &amp; Governance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker 4 -->
+      <div class="speaker-card">
+        <div class="speaker-card-header">
+          <div class="speaker-avatar">
+            <img src="speakers/sachin-chaturvedi.png" 
+                 alt="Shri Sachin Chaturvedi"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-size:2.2rem;font-weight:700;color:var(--gold-lt)\'>SC</span>';">
+          </div>
+          <div class="speaker-name">Shri Sachin Chaturvedi</div>
+          <div class="speaker-role">Vice Chancellor<br>Nalanda Vishwavidyalaya</div>
+        </div>
+        <div class="speaker-card-body">
+          <p class="speaker-bio">
+            Heading one of India's most symbolically significant academic institutions — reviving the legacy of ancient Nalanda — Shri Sachin Chaturvedi brings scholarly depth on India's intellectual heritage.
+          </p>
+          <div class="speaker-tag-list">
+            <span class="speaker-tag">Higher Education</span>
+            <span class="speaker-tag">Cultural Heritage</span>
+            <span class="speaker-tag">AI &amp; Academia</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     EVENT THEMES
+════════════════════════════════════════ -->
+<section id="themes">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Discussion Themes</div>
+      <h2 class="section-title">What the Conclave Will Address</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="themes-grid">
+      <div class="theme-card">
+        <div class="theme-icon navy">🧠</div>
+        <div class="theme-name">Ethical Artificial Intelligence</div>
+        <p class="theme-desc">What moral frameworks should govern AI systems? How can trust, accountability, and transparency be built into the design of technology?</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-icon saffron">🏺</div>
+        <div class="theme-name">Cultural Preservation in the Digital Age</div>
+        <p class="theme-desc">Protecting linguistic diversity, traditional knowledge, oral heritage, and cultural identity from homogenization by global AI platforms.</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-icon gold">📜</div>
+        <div class="theme-name">Indian Knowledge Systems &amp; AI</div>
+        <p class="theme-desc">How can Vedic philosophy, Ayurveda, yoga, and India's civilizational wisdom offer ethical frameworks for 21st-century technology?</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-icon royal">🏛️</div>
+        <div class="theme-name">AI &amp; Democratic Governance</div>
+        <p class="theme-desc">Ensuring that AI systems serve democratic values — citizen participation, institutional accountability, and equitable access to innovation.</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-icon navy">🌱</div>
+        <div class="theme-name">Youth as Conscious Innovators</div>
+        <p class="theme-desc">Inspiring India's youth to lead AI development with a grounding in character, values, and a sense of responsibility to society and humanity.</p>
+      </div>
+      <div class="theme-card">
+        <div class="theme-icon saffron">🔬</div>
+        <div class="theme-name">Spirituality Meets Science</div>
+        <p class="theme-desc">Exploring the complementary relationship between scientific inquiry and spiritual wisdom in building a balanced, human-centered AI civilization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     SCHEDULE
+════════════════════════════════════════ -->
+<section id="schedule">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Programme</div>
+      <h2 class="section-title">Evening Schedule</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="schedule-card">
+      <div class="schedule-header">
+        <h3>23 May 2026 — S.N. Sinha Sabhagar, A.N. College, Patna</h3>
+        <span class="schedule-date-badge">06:00 PM onwards</span>
+      </div>
+      <ul class="schedule-list">
+        <li class="schedule-item">
+          <div class="schedule-time">05:30 PM</div>
+          <div>
+            <div class="schedule-event">Registration &amp; Welcome of Delegates</div>
+            <div class="schedule-note">Entry and assembly of attendees at S.N. Sinha Sabhagar</div>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="schedule-time">06:00 PM</div>
+          <div>
+            <div class="schedule-event">Inaugural Ceremony</div>
+            <div class="schedule-note">Lamp lighting, introductory address by organizers, welcome of distinguished guests</div>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="schedule-time">06:20 PM</div>
+          <div>
+            <div class="schedule-event">Keynote: Dr. Chinmay Pandya Ji</div>
+            <div class="schedule-note">AI for Cultural Preservation — The Ethical Imperative for India</div>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="schedule-time">06:50 PM</div>
+          <div>
+            <div class="schedule-event">Address by Shri Sundeep Waslekar Ji</div>
+            <div class="schedule-note">Global Futures &amp; Responsible AI — A World Perspective</div>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="schedule-time">07:15 PM</div>
+          <div>
+            <div class="schedule-event">Address by Shri Ravi Shankar Prasad</div>
+            <div class="schedule-note">AI, Law, and Democratic Governance — An Indian Legislative Perspective</div>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="schedule-time">07:35 PM</div>
+          <div>
+            <div class="schedule-event">Addresses by Distinguished Guests</div>
+            <div class="schedule-note">Shri Vikas Vaibhav &amp; Shri Sachin Chaturvedi</div>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="schedule-time">08:00 PM</div>
+          <div>
+            <div class="schedule-event">Open Dialogue &amp; Youth Q&amp;A</div>
+            <div class="schedule-note">Engaging Bihar's youth in conversation with distinguished speakers</div>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="schedule-time">08:30 PM</div>
+          <div>
+            <div class="schedule-event">Closing Ceremony &amp; Vote of Thanks</div>
+            <div class="schedule-note">By Prantiya Yuva Prakoshth Bihar leadership</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     ORGANIZERS
+════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════
+     ORGANIZERS
+════════════════════════════════════════ -->
+<section id="organizers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" style="color:var(--gold);">Organised By</div>
+      <h2 class="section-title">The Institutions Behind the Vision</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        Two organizations united by a shared mission — serving humanity through spiritual wisdom, cultural pride, and transformative youth leadership.
+      </p>
+    </div>
+
+    <div class="org-cards">
+      <!-- AWGP -->
+      <div class="org-card">
+        <div class="org-logo-area">
+          <a href="https://www.awgp.org/" target="_blank">
+            <img src="awgp.png"
+                 alt="All World Gayatri Pariwar Logo"
+                 onerror="this.outerHTML='<div class=\'org-logo-placeholder\'>🔱</div>'"/>
+          </a>
+        </div>
+        <div class="org-name">
+          <a href="https://www.awgp.org/" target="_blank" style="color:inherit; text-decoration:none;">
+            All World Gayatri Pariwar
+          </a>
+        </div>
+        <p class="org-desc">
+          Founded by Yugrishi Pt. Shriram Sharma Acharya, AWGP is one of the world's largest socio-spiritual movements with tens of millions of members across the globe. Rooted in the Gayatri Mantra and the philosophy of human transformation, AWGP works at the intersection of spirituality, culture, education, and social service — championing values-based development and India's civilizational legacy in the modern age.
+        </p>
+      </div>
+
+      <!-- PYP Bihar -->
+      <div class="org-card">
+        <div class="org-logo-area">
+          <a href="https://www.pypbihar.org/" target="_blank">
+            <img src="pyp-logo.png" 
+                 alt="Prantiya Yuva Prakoshth Bihar"
+                 style="max-height: 90px; max-width: 160px; object-fit: contain;"
+                 onerror="this.outerHTML='<div class=\'org-logo-placeholder\'>🌟</div>'"/>
+          </a>
+        </div>
+        <div class="org-name">
+          <a href="https://www.pypbihar.org/" target="_blank" style="color:inherit; text-decoration:none;">
+            Prantiya Yuva Prakoshth Bihar
+          </a>
+        </div>
+        <p class="org-desc">
+          The youth wing of AWGP in the state of Bihar, Prantiya Yuva Prakoshth Bihar mobilizes young leaders across the state for spiritual, cultural, and national development.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CONTACT & REGISTRATION
+════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Join the Conclave</div>
+      <h2 class="section-title">Contact &amp; Registration</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        This event is open to all — students, faculty, policymakers, professionals, and citizens who care about the future of technology and culture. Entry is complimentary.
+      </p>
+    </div>
+
+<div class="contact-grid">
+  <div class="contact-info">
+    <h3>Venue &amp; Event Details</h3>
+    
+    <!-- Venue -->
+    <div class="contact-detail">
+      <div class="contact-icon">📍</div>
+      <div>
+        <div class="contact-text-label">Venue</div>
+        <div class="contact-text-value">
+          S.N. Sinha Sabhagar<br>
+          A.N. College, Boring Road<br>
+          Patna, Bihar - 800001
+        </div>
+        <a href="https://www.google.com/maps/search/A.N.+College,+Boring+Road,+Patna,+Bihar" 
+           target="_blank" 
+           class="map-link">
+          <span style="margin-right:6px;">↗</span> View on Google Maps
+        </a>
+      </div>
+    </div>
+
+    <!-- Date & Time -->
+    <div class="contact-detail">
+      <div class="contact-icon">📅</div>
+      <div>
+        <div class="contact-text-label">Date &amp; Time</div>
+        <div class="contact-text-value">
+          Saturday, 23 May 2026<br>
+          <strong>06:00 PM onwards</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entry -->
+    <div class="contact-detail">
+      <div class="contact-icon">🎟️</div>
+      <div>
+        <div class="contact-text-label">Entry</div>
+        <div class="contact-text-value">Complimentary — Open to All</div>
+      </div>
+    </div>
+
+    <!-- Organised By -->
+    <div class="contact-detail">
+      <div class="contact-icon">🏛️</div>
+      <div>
+        <div class="contact-text-label">Organised By</div>
+        <div class="contact-text-value">
+          Prantiya Yuva Prakoshth Bihar<br>
+          All World Gayatri Pariwar
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Side Register Box -->
+  <div class="register-box">
+    <h3>Connect With the Organizers</h3>
+    <p>For inquiries, RSVPs, and further information about the National Conclave, reach us at:</p>
+    <a href="tel:9113175393" class="register-phone">📞 9113175393</a>
+    <a href="tel:8340470592" class="register-phone">📞 8340470592</a>
+    <div style="margin-top:24px; padding-top:20px; border-top:1px solid rgba(201,168,76,0.2);">
+      <p style="font-size:0.82rem; color:rgba(255,255,255,0.6); margin-bottom:16px;">
+        Come prepared to think deeply, connect meaningfully, and leave inspired.
+      </p>
+      <a href="tel:9113175393" class="btn-primary" style="width:100%; text-align:center; display:block;">
+        Call for any queries
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="footer-brand">National Conclave · AI for Cultural Preservation &amp; Ethical Innovation · 23 May 2026</div>
+  <p>Organised by All World Gayatri Pariwar &amp; Prantiya Yuva Prakoshth Bihar · Patna, Bihar</p>
+</footer>
+
+<!-- ════════════════════════════════════════
+     JS
+════════════════════════════════════════ -->
+<script>
+  function openLightbox() {
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  function toggleMenu() {
+    const ul = document.querySelector('.nav-links');
+    const cta = document.querySelector('.nav-cta');
+    if (ul.style.display === 'flex') {
+      ul.style.display = '';
+      cta.style.display = '';
+    } else {
+      ul.style.display = 'flex';
+      ul.style.flexDirection = 'column';
+      ul.style.position = 'absolute';
+      ul.style.top = '64px';
+      ul.style.left = '0';
+      ul.style.right = '0';
+      ul.style.background = 'rgba(13,27,62,0.98)';
+      ul.style.padding = '20px 5%';
+      ul.style.gap = '16px';
+      cta.style.display = 'none';
+    }
+  }
+
+  // Subtle scroll animation for elements
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.speaker-card, .theme-card, .timeline-item, .cred-card, .org-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+    observer.observe(el);
+  });
+  let currentIndex = 0;
+
+function initCarousel() {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentIndex = index;
+  }
+
+  window.moveSlide = function(step) {
+    let newIndex = currentIndex + step;
+    if (newIndex >= slides.length) newIndex = 0;
+    if (newIndex < 0) newIndex = slides.length - 1;
+    showSlide(newIndex);
+  };
+
+  window.currentSlide = function(index) {
+    showSlide(index);
+  };
+
+  // Auto slide
+  setInterval(() => {
+    moveSlide(1);
+  }, 5000);
+
+  // Initialize
+  showSlide(0);
+}
+
+// Initialize carousel after page loads
+window.onload = initCarousel;
+</script>
+</body>
+</html>
