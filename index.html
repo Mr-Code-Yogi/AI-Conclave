@@ -687,7 +687,70 @@ p:not(.hero-subtitle):not(.register-box p) {
     background: rgba(201,168,76,0.15);
     border-color: var(--gold);
 }
+/* Updated Timeline Body - Works on both light and dark sections */
+.timeline-body {
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  margin-bottom: 16px;
+}
 
+/* Dark mode support for #chinmay section */
+#chinmay .timeline-body {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+#chinmay .timeline-event {
+  color: #fff;
+}
+
+#chinmay .timeline-desc {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#chinmay .timeline-year {
+  color: var(--gold-lt);
+}
+
+/* Light mode (if used elsewhere) */
+.timeline-body:not(#chinmay .timeline-body) {
+  background: #f8f9fa;
+  border: 1px solid rgba(13,27,62,0.08);
+}
+/* ==================== MILESTONE GALLERY ==================== */
+.milestone-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.milestone-img {
+  width: 100%;
+  height: 210px;                    /* Fixed height for consistency */
+  object-fit: cover;                /* Keeps image proportions */
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(201,168,76,0.15);
+}
+
+.milestone-img:hover {
+  transform: scale(1.04);
+}
+
+/* Extra safety for dark section */
+#chinmay .milestone-gallery {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+#chinmay .milestone-img {
+  height: 200px;   /* Slightly smaller on dark section if needed */
+}
 /* Mobile Optimization */
 @media (max-width: 900px) {
     .global-roles {
@@ -1056,31 +1119,66 @@ p:not(.hero-subtitle):not(.register-box p) {
 
         <!-- Major Milestones -->
         <div class="milestones-title">Major Milestones in AI & Global Leadership</div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot">🕊️</div>
-            <div class="timeline-body">
-              <div class="timeline-year">Hiroshima, Japan</div>
-              <div class="timeline-event">Sole Indian Signatory — Historic Hiroshima Appeal</div>
-              <div class="timeline-desc">Representing India and Sanatan Dharma at the International Conference on "AI Ethics for Peace: World Religious Committee to the Rome Call." Signed the Hiroshima Appeal alongside Japan's Communications Minister and heads of 12 world religions, committing to prevent AI from working against humanity.</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot">🏛️</div>
-            <div class="timeline-body">
-              <div class="timeline-year">February 2026 · Bharat Mandapam, New Delhi</div>
-              <div class="timeline-event">India AI Impact Summit 2026 — AI for Democracy</div>
-              <div class="timeline-desc">Chaired and led the landmark session "AI for Democracy: Reimagining Governance in the Age of Intelligence." Called for regulatory bodies, democratic safeguards, and trust-based AI systems alongside parliamentary leaders including Om Birla and international delegates.</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot">🕌</div>
-            <div class="timeline-body">
-              <div class="timeline-year">DSVV, Haridwar</div>
-              <div class="timeline-event">International Conference — Faith &amp; Future: AI &amp; Spirituality</div>
-              <div class="timeline-desc">Convened a historic pre-summit conference bringing together scientists, policymakers, spiritual leaders, and AI experts from 20+ countries. Articulated the case for spirituality as the ethical bedrock of AI governance.</div>
-            </div>
-          </div>
+<!-- Milestone 1 -->
+  <div class="timeline-item">
+    <div class="timeline-dot">🕊️</div>
+    <div class="timeline-body">
+      <div class="timeline-year">Hiroshima, Japan</div>
+      <div class="timeline-event">Sole Indian Signatory — Historic Hiroshima Appeal</div>
+      
+      <div class="timeline-desc">
+        Representing India and Sanatan Dharma at the International Conference on "AI Ethics for Peace: World Religious Committee to the Rome Call." 
+        Signed the Hiroshima Appeal alongside Japan's Communications Minister and heads of 12 world religions, committing to prevent AI from working against humanity.
+      </div>
+
+      <!-- Photo Gallery -->
+      <div class="milestone-gallery">
+        <img src="Milestone/aifs_1.jpg" alt="Hiroshima Appeal Signing" class="milestone-img">
+        <img src="Milestone/aifs_2.jpg" alt="With Japan's Communications Minister" class="milestone-img">
+        <img src="Milestone/aifs_3.jpg" alt="Group Photo with Religious Leaders" class="milestone-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Milestone 2 -->
+  <div class="timeline-item">
+    <div class="timeline-dot">🏛️</div>
+    <div class="timeline-body">
+      <div class="timeline-year">February 2026 · Bharat Mandapam, New Delhi</div>
+      <div class="timeline-event">India AI Impact Summit 2026 — AI for Democracy</div>
+      
+      <div class="timeline-desc">
+        Chaired and led the landmark session "AI for Democracy: Reimagining Governance in the Age of Intelligence." 
+        Called for regulatory bodies, democratic safeguards, and trust-based AI systems. Shared the stage with parliamentary leaders including Om Birla and international delegates.
+      </div>
+
+      <div class="milestone-gallery">
+        <img src="YOUR_PHOTO_1_URL.jpg" alt="Chairing AI for Democracy Session" class="milestone-img">
+        <img src="YOUR_PHOTO_2_URL.jpg" alt="With Om Birla" class="milestone-img">
+        <img src="YOUR_PHOTO_3_URL.jpg" alt="Panel Discussion" class="milestone-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Milestone 3 -->
+  <div class="timeline-item">
+    <div class="timeline-dot">🕌</div>
+    <div class="timeline-body">
+      <div class="timeline-year">DSVV, Haridwar</div>
+      <div class="timeline-event">International Conference — Faith & Future: AI & Spirituality</div>
+      
+      <div class="timeline-desc">
+        Convened a historic pre-summit conference bringing together scientists, policymakers, spiritual leaders, and AI experts from 20+ countries. 
+        Articulated the case for spirituality as the ethical bedrock of AI governance.
+      </div>
+
+      <div class="milestone-gallery">
+        <img src="YOUR_PHOTO_1_URL.jpg" alt="Conference at DSVV Haridwar" class="milestone-img">
+        <img src="YOUR_PHOTO_2_URL.jpg" alt="With Spiritual Leaders" class="milestone-img">
+        <img src="YOUR_PHOTO_3_URL.jpg" alt="Keynote Session" class="milestone-img">
+      </div>
+    </div>
+  </div>
           <div class="timeline-item">
             <div class="timeline-dot">🌐</div>
             <div class="timeline-body">
@@ -1318,71 +1416,12 @@ p:not(.hero-subtitle):not(.register-box p) {
         <h3>23 May 2026 — S.N. Sinha Sabhagar, A.N. College, Patna</h3>
         <span class="schedule-date-badge">06:00 PM onwards</span>
       </div>
-      <ul class="schedule-list">
-        <li class="schedule-item">
-          <div class="schedule-time">05:30 PM</div>
-          <div>
-            <div class="schedule-event">Registration &amp; Welcome of Delegates</div>
-            <div class="schedule-note">Entry and assembly of attendees at S.N. Sinha Sabhagar</div>
-          </div>
-        </li>
-        <li class="schedule-item">
-          <div class="schedule-time">06:00 PM</div>
-          <div>
-            <div class="schedule-event">Inaugural Ceremony</div>
-            <div class="schedule-note">Lamp lighting, introductory address by organizers, welcome of distinguished guests</div>
-          </div>
-        </li>
-        <li class="schedule-item">
-          <div class="schedule-time">06:20 PM</div>
-          <div>
-            <div class="schedule-event">Keynote: Dr. Chinmay Pandya Ji</div>
-            <div class="schedule-note">AI for Cultural Preservation — The Ethical Imperative for India</div>
-          </div>
-        </li>
-        <li class="schedule-item">
-          <div class="schedule-time">06:50 PM</div>
-          <div>
-            <div class="schedule-event">Address by Shri Sundeep Waslekar Ji</div>
-            <div class="schedule-note">Global Futures &amp; Responsible AI — A World Perspective</div>
-          </div>
-        </li>
-        <li class="schedule-item">
-          <div class="schedule-time">07:15 PM</div>
-          <div>
-            <div class="schedule-event">Address by Shri Ravi Shankar Prasad</div>
-            <div class="schedule-note">AI, Law, and Democratic Governance — An Indian Legislative Perspective</div>
-          </div>
-        </li>
-        <li class="schedule-item">
-          <div class="schedule-time">07:35 PM</div>
-          <div>
-            <div class="schedule-event">Addresses by Distinguished Guests</div>
-            <div class="schedule-note">Shri Vikas Vaibhav &amp; Shri Sachin Chaturvedi</div>
-          </div>
-        </li>
-        <li class="schedule-item">
-          <div class="schedule-time">08:00 PM</div>
-          <div>
-            <div class="schedule-event">Open Dialogue &amp; Youth Q&amp;A</div>
-            <div class="schedule-note">Engaging Bihar's youth in conversation with distinguished speakers</div>
-          </div>
-        </li>
-        <li class="schedule-item">
-          <div class="schedule-time">08:30 PM</div>
-          <div>
-            <div class="schedule-event">Closing Ceremony &amp; Vote of Thanks</div>
-            <div class="schedule-note">By Prantiya Yuva Prakoshth Bihar leadership</div>
-          </div>
-        </li>
-      </ul>
+
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════════════════
-     ORGANIZERS
-════════════════════════════════════════ -->
+
 <!-- ════════════════════════════════════════
      ORGANIZERS
 ════════════════════════════════════════ -->
